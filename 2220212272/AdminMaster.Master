@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.Master.cs" Inherits="OnlineSupermarketTuto.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style>
+        * {
+            font-family:STXihei;
+        }
+        #left {
+            color:white;
+            height:745px;
+            background-color:#5E5B7A;
+        }
+        lable{
+            color:white;
+        }
+        a:link{
+            text-decoration:none ; 
+            color:white ;
+        }       
+
+    </style>
+    <link  rel="stylesheet" href="../../Assets/Lib/css/bootstrap.css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+             <div class="col-2" id="left">
+                 <div style="height:120px" >
+                     <img src="../../Assets/Images/2681665.png" style="height:60px; width:60px" id="logo"/>
+                 </div>
+                 <div class="p-2">
+                     <div class="mb-3">
+                         <img src="../../Assets/Images/4914456.png" style="height:40px; width:40px"/>
+                         <a href="Products.aspx" ><lable>商品</lable></a>
+                     </div>                     
+                     <div class="mb-3">
+                         <img src="../../Assets/Images/3201521.png" style="height:40px; width:40px"/>
+                         <a href="Manufactors.aspx"><lable>生产商</lable></a>
+                     </div>
+                     <div class="mb-3">
+                         <img src="../../Assets/Images/2967324.png" style="height:40px; width:40px"/>
+                         <a href="Customers.aspx"><lable>用户</lable></a>
+                     </div>
+                     <div class="mb-3">
+                         <img src="../../Assets/Images/10880504.png" style="height:40px; width:40px"/>
+                         <a href="Categories.aspx"><lable>类目</lable></a>
+                     </div>
+                     <div>
+                         <div style="height:300px">
+
+                         </div>
+                     </div>
+                     <div class="mb-3">
+                         <img src="../../Assets/Images/9691917.png" style="height:40px; width:40px"/>
+                         <a href="../../Login.aspx"><lable>退出</lable></a>
+                     </div>
+                 </div>
+                 
+             </div>
+             <div class="col-10">
+                 <form id="form1" runat="server">
+                     <div>
+                        <asp:ContentPlaceHolder ID="MyContent" runat="server">
+
+                        </asp:ContentPlaceHolder>
+                     </div>
+                 </form>
+            </div>
+           
+            
+        </div>
+    </div>
+   
+</body>
+</html>
+ 
