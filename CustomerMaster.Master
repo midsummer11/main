@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CustomerMaster.master.cs" Inherits="OnlineSupermarketTuto.Views.Customers.CustomerMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style>
+        * {
+            font-family:STXihei;
+        }
+        #left {
+            color:white;
+            height:945px;
+            background-color:#5E5B7A;
+        }
+        lable{
+            color:white;
+        }
+        a:link{
+            text-decoration:none ; 
+            color:white ;
+        }       
+
+    </style>
+        <script src="actjs.js"></script>
+    <link  rel="stylesheet" href="../../Assets/Lib/css/bootstrap.css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+             <div class="col-2" id="left">
+                 <div style="height:120px" >
+                     <img src="../../Assets/Images/3082031.png" style="height:60px; width:60px" id="logo"/>
+                 </div>
+                 <div class="p-2">
+                     <div class="mb-3">                         
+                         <img src="../../Assets/Images/1651965.png" style="height:40px; width:40px"/>
+                         <a href="Billing.aspx" ><lable>订单结算</lable></a>                         
+                     </div>                     
+                     <div class="mb-3">
+                         <img src="../../Assets/Images/4470922.png" style="height:40px; width:40px"/>
+                         <a href="Comments.aspx"><lable>商品评价</lable></a>                         
+                     </div>
+                     <div class="mb-3">
+                         <img src="../../Assets/Images/3721186.png" style="height:40px; width:40px"/>
+                         <a href="Communicate.aspx"><lable>人工智能</lable></a>
+                     </div>
+                     <div class="mb-3">
+                         <img src="../../Assets/Images/10880504.png" style="height:40px; width:40px"/>
+                         <a href="Activities.aspx"><lable>最新活动</lable></a>
+                     </div>                    
+                     <div>
+                         <div style="height:280px">
+
+                         </div>
+                     </div>
+                     <div class="mb-3">
+                         <img src="../../Assets/Images/9691917.png" style="height:40px; width:40px"/>
+                         <a href="../../Login.aspx"><lable>退出</lable></a>
+                     </div>
+                     
+                 </div>
+                 <div style="height:120px" >
+                      <img src="../../Assets/Images/384999.png" style="height:180px; width:200px" id="buyicon"/>
+                 </div>
+             </div>
+             <div class="col-10">
+                 <form id="form1" runat="server">
+                     <div>
+                        <asp:ContentPlaceHolder ID="MyContent" runat="server">
+
+                        </asp:ContentPlaceHolder>
+                     </div>
+                 </form>
+            </div>
+       
+            
+        </div>
+    </div>
+   
+</body>
+</html>

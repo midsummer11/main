@@ -1,0 +1,25 @@
+﻿/* Site.css */
+
+.listViewStyle {
+    background-color: #C7D1EB;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+    .listViewStyle tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .listViewStyle tr:nth-child(odd) {
+        background-color: #C7D1EB;
+    }
+
+    .listViewStyle tr:hover {
+        background-color: #C7D1EB;
+    }
+
+
